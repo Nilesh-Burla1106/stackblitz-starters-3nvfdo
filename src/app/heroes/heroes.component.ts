@@ -10,11 +10,13 @@ import { HeroComponent } from './hero/hero.component';
   imports:[HeroComponent,CommonModule]
 })
 export class HeroesComponent implements OnInit {
-  heroes:Hero[]=[];
-  constructor() { }
+  heroes:Hero[]=HEROES;
+  constructor() {
+    this.heroes=HEROES;
+   }
 
   ngOnInit() {
-    this.heroes=HEROES;
+    
   }
 
 }

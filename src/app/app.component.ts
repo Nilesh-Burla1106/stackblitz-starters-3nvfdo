@@ -10,10 +10,11 @@ import { HeroesComponent } from './heroes/heroes.component';
   imports:[HeroesComponent,HeroDetailsComponent]
 })
 export class AppComponent implements OnInit {
-
+  heroes: Hero[] = HEROES;
   constructor() { }
 
   ngOnInit() {
+    this.heroes=HEROES;
   }
 
 }

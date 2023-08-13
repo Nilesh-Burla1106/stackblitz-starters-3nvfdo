@@ -12,5 +12,4 @@ export class HeroDetailsComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
